@@ -11,7 +11,7 @@ require('dotenv').config()
 const app = express()
 
 //middlewares
-app.use(morgan('dev))
+app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(cookieParser())
 
@@ -28,4 +28,4 @@ app.get('/api', (req, res) => {
 const port = process.env.PORT || 8000
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
-}
+})
