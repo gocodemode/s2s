@@ -29,7 +29,7 @@ app.get('/api', (req, res) => {
 
 //database connection
 mongoose
-    .connect(process.env.DBLOCAL, {useNewUrlParser: true})
+    .connect(process.env.MONGO_URI, {useNewUrlParser: true})
     .then(() => console.log("DB Connected"))
     .catch((err) => console.log("DB Error => ", err));
 
