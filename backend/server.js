@@ -24,7 +24,6 @@ if (process.env.NODE_ENV === "development") {
 }
 
 //routes middleware
-
 app.use(express.urlencoded('blogRoutes'));
 
 
